@@ -1,3 +1,9 @@
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "aiogram"])
+    
 from aiogram import Bot, Dispatcher, types, executor
 
 bot = Bot(token="1896842951:AAEt5izgQNPbXJiMNqcgScSt8sPWwwLG7CA", proxy='http://proxy.com:3128')
